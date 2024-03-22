@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BulkyBook.Models;
 
 namespace BulkyBook.DataAccess.Repository.IRepository
 {
-	public interface IUnitOfWork
+	public interface ICompanyRepository : IRepository<Company> 
 	{
-		ICategoryRepository Category {  get; }
-		IProductRepository Product { get; }
-         ICompanyRepository Company { get; }
+		void Update(Company obj);
 
 
-        void Save();
+
 
 	}
 }
