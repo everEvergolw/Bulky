@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BulkyBook.Models;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace BulkyBook.DataAccess.Repository.IRepository
 {
-	public interface IApplicationUserRepository : IRepository<ApplicationUser> 
+	public interface IProductImageRepository : IRepository<ProductImage> 
 	{
-		public void Update(ApplicationUser applicationUser);
+		void Update(ProductImage obj);
+
+
 
 
 	}
